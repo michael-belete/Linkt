@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.bg-dots {
+  @apply bg-dot bg-black bg-[length:12px_12px] bg-repeat;
+}
+
+.btn-primary {
+  @apply flex justify-center items-center bg-blend-overlay bg-primary bg-gradient-to-b from-transparent to-black/30 shadow-primary-btn rounded-lg font-bold outline-primary outline-offset-2 outline-2 focus-visible:outline-2 focus-visible:outline focus-visible:outline-offset-2 duration-200 ease-linear hover:shadow-primary hover:shadow-[0px_0px_20px_2px] text-center text-sm lg:text-base;
+}
+
+.contact-input {
+  @apply w-full px-4 py-3 bg-secondary outline-none rounded border border-silver-gray/50 focus:border-silver-gray text-white/50 focus:text-white;
+}
+
+.scrollbar-style {
+  @apply scrollbar-thin scrollbar-track-rounded scrollbar-thumb-rounded scrollbar-thumb-primary/70;
+}
+
+.shadow-card {
+  @apply shadow-[inset_0px_1px_0px_0px_hsla(0,0%,100%,0.06),0px_4px_10px_0px_rgba(0,0,0,0.3)];
+}
