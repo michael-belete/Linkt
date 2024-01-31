@@ -1,7 +1,8 @@
 import CTA from "@/components/common/CTA";
-import { solutionsFeaturesData } from "@/data";
 import Hero from "@/components/solutions/Hero";
 import { Metadata } from "next";
+import { solutionsFeaturesData, solutionsHeroData } from "@/data";
+import { stripHtml } from "@/utils";
 
 type Props = {
   params: { solution: string };
@@ -9,16 +10,30 @@ type Props = {
 
 export function generateMetadata({ params }: Props): Metadata {
   const { solution } = params;
-  const title = solution
+  const prefix = solution
     .replace("-", " ")
     .split(" ")
     .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
     .join(" ");
 
+  let title = `${prefix}: ${stripHtml(solutionsHeroData[solution].title)}`;
+  let description = stripHtml(solutionsHeroData[solution].description);
+
   return {
     title,
     alternates: {
-      canonical: `/${solution}`,
+      canonical: `/solutions/${solution}`,
+    },
+    description,
+
+    openGraph: {
+      title,
+      description,
+    },
+
+    twitter: {
+      title,
+      description,
     },
   };
 }

@@ -19,7 +19,7 @@ export default function PricingPage() {
       titleColor: "text-[#FA8072]",
       features: [
         "Dedicated Account Manager",
-        "Team of Engineers (AI, Full-Stack, & Design)",
+        "Team (AI, Full-Stack, Project Manager, & Design)",
         "Unlimited Iterations",
         "24/7 Text Support",
       ],

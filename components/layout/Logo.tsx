@@ -8,12 +8,12 @@ const Logo = () => {
     <Link href="/">
       <div className="flex gap-2 items-center">
         <Image
-          className="object-cover w-full h-9"
+          className="object-cover w-9 h-9"
           src={logo}
           alt="Linkt logo icon"
         />
         <Image
-          className="object-cover w-full h-4"
+          className="object-cover w-12 h-6"
           src={Linkt}
           alt="Linkt logo text"
         />

@@ -11,9 +11,10 @@ export const metadata: Metadata = {
   // Primary meta tags
   title: {
     template: "%s | Linkt",
-    default: "Linkt",
+    default: "Linkt: Make AI your superpower",
   },
-  description: "Make AI your Superpower",
+  description:
+    "Make AI your superpower with Linkt's AI based solutions. Elevate customer service using AI-powered chatbots, revolutionize insights and visual analytics with our computer vision systems, personalize user experiences through our recommendation systems, and create unique content with our advanced AI-powered content generation systems. Explore Linkt's innovative AI solutions for a transformative digital experience.",
   metadataBase: new URL("https://www.linkt.ai"),
   alternates: {
     canonical: "/",
@@ -25,7 +26,8 @@ export const metadata: Metadata = {
     siteName: "Linkt",
     url: `/`,
     title: "Linkt",
-    description: "Make AI your Superpower",
+    description:
+      "Make AI your superpower with Linkt's AI based solutions. Elevate customer service using AI-powered chatbots, revolutionize insights and visual analytics with our computer vision systems, personalize user experiences through our recommendation systems, and create unique content with our advanced AI-powered content generation systems. Explore Linkt's innovative AI solutions for a transformative digital experience.",
     images: ["/meta/og-video.gif", "/meta/og-image.png"],
   },
   // Twitter
@@ -34,7 +36,8 @@ export const metadata: Metadata = {
     images: ["/meta/og-video.gif", "/meta/og-image.png"],
     site: "@_linktai",
     title: "Linkt",
-    description: "Make AI your Superpower",
+    description:
+      "Make AI your superpower with Linkt's AI based solutions. Elevate customer service using AI-powered chatbots, revolutionize insights and visual analytics with our computer vision systems, personalize user experiences through our recommendation systems, and create unique content with our advanced AI-powered content generation systems. Explore Linkt's innovative AI solutions for a transformative digital experience.",
   },
 };
 

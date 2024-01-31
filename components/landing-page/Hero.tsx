@@ -7,7 +7,7 @@ export default function Hero() {
         <h1
           data-aos="fade-up"
           data-aos-duration="600"
-          className="font-semibold text-4xl sm:text-6xl md:text-7xl"
+          className="font-semibold text-4xl xs:text-6xl md:text-7xl"
         >
           <span>Make AI your </span>
           <span className="text-primary">Superpower</span>
@@ -17,8 +17,7 @@ export default function Hero() {
           data-aos-duration="1000"
           className="text-silver-gray text-base sm:text-lg"
         >
-          Bring value to your customers and team with the best AI
-          solutions{" "}
+          Bring value to your customers and team with the best AI solutions{" "}
         </p>
         <div data-aos="fade-up" data-aos-duration="1200">
           <a

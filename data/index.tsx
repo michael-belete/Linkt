@@ -1,7 +1,3 @@
-import book from "@/public/about/book.svg";
-import cart from "@/public/about/cart.svg";
-import pivot from "@/public/about/pivot.svg";
-import team from "@/public/about/team.svg";
 import globe from "@/public/common/globe.svg";
 import user from "@/public/common/user.svg";
 import database from "@/public/about/database.svg";
@@ -33,57 +29,6 @@ import contentGeneration from "@/public/solutions/content-generation/ai-content-
 
 import Image from "next/image";
 
-const timelineData = [
-  {
-    date: {
-      month: "May",
-      year: "2023",
-    },
-    image: {
-      src: book,
-      alt: "Book icon",
-    },
-    title: "Intial Idea",
-    body: "Skillflow is born. A generative AI platform that gives users the power to generate courses on any topic they like.",
-  },
-  {
-    date: {
-      month: "May",
-      year: "2023",
-    },
-    image: {
-      src: team,
-      alt: "Teams icon",
-    },
-    title: "The Team is Formed",
-    body: "Our full team is formed. They are working on the generative AI platform, looking to get traction and an initial user base.",
-  },
-  {
-    date: {
-      month: "September",
-      year: "2023",
-    },
-    image: {
-      src: pivot,
-      alt: "Idea lamp icon",
-    },
-    title: "The Pivot",
-    body: "Our team pivots from there initial product. They recognize the more pressing issue of providing remote education platforms with AI technology.",
-  },
-  {
-    date: {
-      month: "November",
-      year: "2023",
-    },
-    image: {
-      src: cart,
-      alt: "Cart icon",
-    },
-    title: "Go To Market",
-    body: "With our models ready, we bring the platform to market, partnering with our first EdTech platforms.",
-  },
-];
-
 const approachData = [
   {
     image: {
@@ -91,7 +36,7 @@ const approachData = [
       alt: "User icon",
     },
 
-    title: "Identify Problems and Innefficiencies",
+    title: "Identify Problems and Inefficiencies",
     body: "At Linkt, our approach is rooted in a commitment to solve real problems. We believe understanding our customers' needs is the first step in creating value. We work closely with our customers to identify problems and inefficiencies in their platforms. This allows us to build AI models that are tailored to their specific needs, ensuring that our products are not only innovative but also aligned with the real-world needs.",
     leftAlign: false,
   },
@@ -250,7 +195,7 @@ const solutionsHeroData: SolutionsHeroData = {
     title:
       "Elevate Your Customer Service with <span className='text-primary block'>AI-Powered Chatbots</span>",
     description:
-      "Discover the future of interactive and intelligent communication. Linkt&apos;s Chatbots provide a complete solution, leveraging advanced Natural Language Processing for human-like conversations. Enhance customer engagement, streamline internal processes, and revolutionize your business interactions across various messaging channels",
+      "Linkt&apos;s Chatbots provide a complete solution, leveraging advanced Large Language Models(LLM) for human-like conversations. Enhance customer engagement, streamline internal processes, and revolutionize your business interactions across various messaging channels",
     image: {
       src: chatbotImg,
       alt: "Chatbot working demo",
@@ -259,7 +204,7 @@ const solutionsHeroData: SolutionsHeroData = {
 
   "computer-vision": {
     title:
-      "Revolutionize Insights with <span className='text-primary block'>Computer Vision Solutions</span>",
+      "Revolutionize insights and visual analytics with our <span className='text-primary block'>Computer Vision Solutions</span>",
     description:
       "Empower your applications with advanced Computer Vision solutions, enabling you to analyze, and visualize valuable insights from visual data with remarkable ease.",
     image: {
@@ -270,7 +215,7 @@ const solutionsHeroData: SolutionsHeroData = {
 
   recommendation: {
     title:
-      "Personalize Experiences with <span className='text-primary block'>Recommendation Systems</span>",
+      "Personalize user experiences through our <span className='text-primary block'>Recommendation Systems</span>",
     description:
       "Unlock the power of tailored recommendations with  advanced Recommendation Engine. Elevate user experiences, boost engagement, and drive conversions by delivering personalized suggestions that resonate with each individual's preferences and behaviors.",
     image: {
@@ -474,7 +419,6 @@ const data = () => {
 };
 
 export {
-  timelineData,
   approachData,
   valuesData,
   buildData,

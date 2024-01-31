@@ -14,7 +14,7 @@ const Approach = () => {
             Our <span className="text-primary">Approach</span>
           </h2>
           <p data-aos="fade-right" className="text-2xl sm:text-3xl">
-            How does Linkt tackle problems and provide solutions for our
+            How does Linkt tackle problems and provide solutions for
             clients?
           </p>
         </div>

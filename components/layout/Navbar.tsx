@@ -18,9 +18,9 @@ const Navbar = () => {
       title: "Solutions",
       children: [
         {
-          title: "Chatbots",
+          title: "Chatbot",
           icon: <TbMessageChatbot className="w-6 h-6 md:w-8 md:h-8" />,
-          subTitle: "Integrate LLM's into industry-specific tasks",
+          subTitle: "Handle nuanced requests",
           route: `/${baseUrl}/chatbots`,
         },
         {
@@ -30,15 +30,15 @@ const Navbar = () => {
           route: `/${baseUrl}/computer-vision`,
         },
         {
-          title: "Recommendation",
+          title: "Recommendation System",
           icon: <TbCpu className="w-6 h-6 md:w-8 md:h-8" />,
-          subTitle: "Tailor customer experiences with personalized suggestions",
+          subTitle: "Tailor experiences with personalized suggestions",
           route: `/${baseUrl}/recommendation`,
         },
         {
           title: "Content Generation",
           icon: <RiAiGenerate className="w-6 h-6 md:w-8 md:h-8" />,
-          subTitle: "Streamlining Digital Creativity with AI",
+          subTitle: "Streamline creativity with text prompts",
           route: `/${baseUrl}/content-generation`,
         },
       ],
