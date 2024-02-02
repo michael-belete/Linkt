@@ -36,17 +36,20 @@ export async function generateMetadata(
       url: `/blog/${blog.slug}`,
       title: blog.title,
       description: excerpt,
-      images: [
-        blog.featuredImage ? blog.featuredImage.node.mediaItemUrl : "",
-        ...previousImages,
-      ],
+      images: blog.featuredImage
+        ? { url: blog.featuredImage.node.mediaItemUrl, alt: blog.title }
+        : [...previousImages],
     },
     twitter: {
       card: "summary_large_image",
-      images: [
-        blog.featuredImage ? blog.featuredImage.node.mediaItemUrl : "",
-        ...previousImages,
-      ],
+      images: blog.featuredImage
+        ? {
+            url: blog.featuredImage.node.mediaItemUrl,
+            alt: blog.title,
+            width: "1200",
+            height: "600",
+          }
+        : [...previousImages],
       site: "@_linktai",
       title: blog.title,
       description: excerpt,
