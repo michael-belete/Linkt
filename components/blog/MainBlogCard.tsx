@@ -3,7 +3,7 @@ import Link from "next/link";
 import { MdAccessTime } from "react-icons/md";
 import { BlogNode } from "@/types/blog";
 import { parseHtml, stripHtml, truncateString } from "@/utils";
-import placeholder from "@/public/meta/og-image.png";
+import placeholder from "@/public/meta/cover.png";
 
 const MainBlogCard = ({ blog }: { blog: BlogNode }) => {
   return (
