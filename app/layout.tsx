@@ -28,12 +28,12 @@ export const metadata: Metadata = {
     title: "Linkt",
     description:
       "Make AI your superpower with Linkt's AI based solutions. Elevate customer service using AI-powered chatbots, revolutionize insights and visual analytics with our computer vision systems, personalize user experiences through our recommendation systems, and create unique content with our advanced AI-powered content generation systems. Explore Linkt's innovative AI solutions for a transformative digital experience.",
-    images: ["/meta/og-video.gif", "/meta/og-image.png"],
+    images: ["/meta/og-video.gif", "/meta/cover.png"],
   },
   // Twitter
   twitter: {
     card: "summary_large_image",
-    images: ["/meta/og-video.gif", "/meta/og-image.png"],
+    images: ["/meta/og-video.gif", "/meta/cover.png"],
     site: "@_linktai",
     title: "Linkt",
     description:
