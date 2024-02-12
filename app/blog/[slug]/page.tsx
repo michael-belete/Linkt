@@ -59,7 +59,7 @@ export async function generateMetadata(
 
 const BlogDetailPage = ({ params }: Props) => {
   return (
-    <main className="min-h-[calc(100vh-80px)] pb-32">
+    <main className="min-h-[calc(100vh-80px)] py-12 md:py-24">
       <Suspense fallback={<BlogDetailFallback />}>
         <BlogDetailContainer slug={params.slug} />
       </Suspense>
