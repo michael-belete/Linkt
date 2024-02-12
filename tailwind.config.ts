@@ -11,7 +11,7 @@ const config: Config = {
       typography: {
         DEFAULT: {
           css: {
-            maxWidth: "64rem", // add required value here
+            maxWidth: "64rem",
           },
         },
       },
