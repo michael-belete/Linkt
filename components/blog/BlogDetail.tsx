@@ -3,7 +3,7 @@ import Image from "next/image";
 import { BlogNode } from "@/types";
 import { extractHeadings, parseHtml } from "@/utils";
 import TableOfContent from "./TableOfContent";
-import MobileTableofContent from "./MobileTableofContent";
+import MobileTableofContent from "./MobileTableOfContent";
 
 const BlogDetail = ({ blog }: { blog: BlogNode }) => {
   const { headings, allHeadings } = extractHeadings(parseHtml(blog.content));
