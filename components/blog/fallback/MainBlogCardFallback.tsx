@@ -4,33 +4,36 @@ const MainBlogCardFallback = () => {
   const fallbackAnimate = "bg-gray-800 animate-pulse";
 
   return (
-    <section className="px-6 pt-20 md:px-8 md:pt-40">
-      <div className="max-w-7xl mx-auto flex flex-col rounded-xl p-6 gap-10 bg-secondary/50 animate-pulse sm:p-8 sm:flex-row">
-        <div
-          className={`${fallbackAnimate} w-full h-52 rounded-xl sm:w-[45%] sm:h-96`}
-        />
-        <div className="flex flex-col gap-8 w-full sm:w-1/2">
-          <div className={`${fallbackAnimate} w-full h-4 rounded`} />
+    <div className="w-full block md:w-1/2">
+      <div className="flex flex-col rounded-xl gap-8">
+        {/* image */}
+        <div className={`w-full rounded-xl h-52 sm:h-96 ${fallbackAnimate}`} />
 
-          <div className="flex gap-2 items-center w-full">
-            <div className={`${fallbackAnimate} rounded-full h-6 w-6`} />
-            <div className={`${fallbackAnimate} h-3 w-24 rounded`} />
+        <div className="flex flex-col gap-4">
+          {/* title */}
+          <div className="flex flex-col gap-2">
+            <div className={`w-full h-3 rounded ${fallbackAnimate}`} />
+            <div className={`w-1/2 h-3 rounded ${fallbackAnimate}`} />
           </div>
 
-          <div className={`${fallbackAnimate} w-1/4 h-3 rounded`} />
-
-          <div className="flex flex-col gap-4 w-full">
-            <div className={`${fallbackAnimate} w-full h-4 rounded`} />
-            <div className={`${fallbackAnimate} w-2/3 h-4 rounded`} />
+          <div className="flex gap-2 items-center">
+            <div className={`rounded-full h-6 w-6 ${fallbackAnimate}`} />
+            <div className={`w-24 h-3 rounded ${fallbackAnimate}`} />
           </div>
 
-          <div className="flex gap-2 items-center text-silver-gray">
-            <div className={`${fallbackAnimate} rounded-full h-6 w-6`} />
-            <div className={`${fallbackAnimate} w-1/4 h-3 rounded`} />
+          {/* intro */}
+          <div className="flex flex-col gap-2">
+            <div className={`w-full h-3 rounded ${fallbackAnimate}`} />
+            <div className={`w-1/2 h-3 rounded ${fallbackAnimate}`} />
+            <div className={`w-1/2 h-3 rounded ${fallbackAnimate}`} />
           </div>
+
+          <div className={`w-24 h-3 rounded ${fallbackAnimate}`} />
+
+          <div className={`w-12 h-3 rounded ${fallbackAnimate}`} />
         </div>
       </div>
-    </section>
+    </div>
   );
 };
 
