@@ -64,8 +64,8 @@ const Navbar = () => {
   }, [path]);
 
   return (
-    <nav className="relative p-4">
-      <div className="flex justify-between items-center gap-8 max-w-7xl mx-auto">
+    <nav className="relative py-4 px-4 sm:px-8">
+      <div className="flex justify-between items-center gap-8 max-w-7xl mx-auto text-silver-gray">
         <div className="flex items-center gap-24">
           <Logo />
         </div>
@@ -79,7 +79,7 @@ const Navbar = () => {
               ) : (
                 <Link
                   href={item?.route || ""}
-                  className={`text-silver-gray/60 duration-300 ease-linear hover:text-white text-sm md:text-base ${
+                  className={`duration-300 ease-linear hover:text-white text-sm md:text-base ${
                     path === item.route && "text-white"
                   }`}
                 >
@@ -89,13 +89,15 @@ const Navbar = () => {
             </li>
           ))}
 
-          <a
-            className="btn-primary px-4 py-2 sm:px-6 sm:py-3"
-            target="_blank"
-            href="https://cal.com/reidmccrabb/meet-with-reid"
-          >
-            Book a meeting
-          </a>
+          <li>
+            <a
+              className="btn-primary px-4 py-2 sm:px-6 sm:py-3"
+              target="_blank"
+              href="https://cal.com/reidmccrabb/meet-with-reid"
+            >
+              Book a meeting
+            </a>
+          </li>
         </ul>
 
         {/* mobile navbar */}
@@ -112,7 +114,7 @@ const Navbar = () => {
                 ) : (
                   <Link
                     href={item?.route || ""}
-                    className={`text-silver-gray/60 font-bold duration-300 ease-linear hover:text-white ${
+                    className={`font-bold duration-300 ease-linear hover:text-white ${
                       path === item.route && "text-white"
                     }`}
                   >
@@ -135,7 +137,11 @@ const Navbar = () => {
         </AnimateHeight>
 
         {/* hamburger menu */}
-        <button onClick={() => setShow(!show)} className="md:hidden">
+        <button
+          onClick={() => setShow(!show)}
+          className="md:hidden"
+          aria-label={show ? "Close menu" : "Open menu"}
+        >
           {show ? (
             <MdClose className="w-8 h-8" />
           ) : (
