@@ -8,12 +8,12 @@ const Footer = () => {
       <div className="pt-12 pb-8 px-4 max-w-7xl mx-auto space-y-12">
         <div className="flex flex-col justify-between gap-12 sm:flex-row">
           <div className="flex flex-col gap-4">
-            <h3 className="font-bold text-base">Contact us</h3>
+            <p className="font-bold text-base">Contact us</p>
             <a
-              className=" text-silver-gray/60 duration-300 ease-linear hover:text-white"
-              href="mailto:reid@linkt.ai"
+              className=" text-silver-gray duration-300 ease-linear hover:text-white"
+              href="mailto:info@linkt.ai"
             >
-              reid@linkt.ai
+              info@linkt.ai
             </a>
           </div>
 
@@ -38,16 +38,18 @@ const Footer = () => {
               className="group"
               target="_blank"
               rel="noopener noreferrer"
+              aria-label="Follow us on Twitter"
             >
-              <FaXTwitter className="w-6 h-6 text-silver-gray/60 duration-300 ease-linear group-hover:text-white" />
+              <FaXTwitter className="w-6 h-6 text-silver-gray duration-300 ease-linear group-hover:text-white" />
             </a>
             <a
-              href="https://www.linkedin.com/company/tryturing/"
+              href="https://www.linkedin.com/company/linktai"
               className="group"
               target="_blank"
               rel="noopener noreferrer"
+              aria-label="Follow us on LinkedIn"
             >
-              <FaLinkedin className="w-6 h-6 text-silver-gray/60 duration-300 ease-linear group-hover:text-white" />
+              <FaLinkedin className="w-6 h-6 text-silver-gray duration-300 ease-linear group-hover:text-white" />
             </a>
           </div>
         </div>
