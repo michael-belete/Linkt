@@ -32,9 +32,9 @@ export default function Hero() {
         </div>
       </div>
 
-      <div className="absolute z-0 h-[50%] w-full bottom-0 left-0 overflow-hidden">
+{/*       <div className="absolute z-0 h-[50%] w-full bottom-0 left-0 overflow-hidden">
         <Wave />
-      </div>
+      </div> */}
     </section>
   );
 }
