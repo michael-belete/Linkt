@@ -7,6 +7,7 @@ import {
 } from "@/types/blog";
 import { MenuItem } from "@/types/menu";
 import { SolutionsFeaturesData, SolutionsHeroData } from "@/types/solution";
+import { Heading } from "./tableOfContent";
 
 export type {
   BlogNode,
@@ -17,4 +18,5 @@ export type {
   PaginationType,
   SolutionsFeaturesData,
   SolutionsHeroData,
+  Heading,
 };
