@@ -2,8 +2,8 @@ import Wave from "./Wave";
 
 export default function Hero() {
   return (
-    <section className="min-h-[calc(100vh-80px)] relative bg-dots">
-      <div className="relative z-20 max-w-7xl mx-auto px-6 text-center flex flex-col items-center gap-8 pt-24 md:pt-44">
+    <section className="min-h-[calc(100vh-80px)] relative">
+      <div className="relative z-20 max-w-7xl mx-auto px-6 text-center flex flex-col items-center gap-8 pt-24 md:pt-38">
         <h1
           data-aos="fade-up"
           data-aos-duration="600"
@@ -15,10 +15,12 @@ export default function Hero() {
         <p
           data-aos="fade-up"
           data-aos-duration="1000"
-          className="text-silver-gray text-base sm:text-lg"
+          className="text-silver-gray text-lg sm:text-xl lg:text-2xl"
         >
-          Bring value to your customers and team with the best AI solutions{" "}
+          Customize chatbots, computer vision, recommendation, and
+          <br /> content to increase efficiency and generate new revenue streams{" "}
         </p>
+
         <div data-aos="fade-up" data-aos-duration="1200">
           <a
             className="btn-primary px-6 py-3"
