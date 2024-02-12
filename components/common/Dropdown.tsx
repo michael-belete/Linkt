@@ -26,7 +26,7 @@ export default function Dropdown(props: Props) {
     >
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className={`text-silver-gray/60 flex gap-1 items-center justify-center duration-300 ease-linear hover:text-white text-base ${active}`}
+        className={`flex gap-1 items-center justify-center duration-300 ease-linear hover:text-white text-base ${active}`}
       >
         <p className="font-bold md:font-normal">{item.title}</p>
         <MdArrowDropDown className={`w-4 h-4 duration-300 ${arrowRotate}`} />
@@ -34,7 +34,7 @@ export default function Dropdown(props: Props) {
       <AnimateHeight
         duration={300}
         height={isOpen ? "auto" : 0}
-        className="md:absolute top-10 left-0 z-50 w-full md:bg-secondary shadow-lg shadow-black/40 backdrop-blur rounded-lg md:w-96"
+        className="md:absolute top-10 left-0 z-50 w-full md:bg-secondary md:shadow-lg md:shadow-black/40 rounded-lg md:w-96"
       >
         <ul className=" flex flex-col text-left gap-6 md:gap-2 p-4">
           {menuItems.map((item) => (
@@ -47,9 +47,7 @@ export default function Dropdown(props: Props) {
                 <div className="flex flex-col gap-1">
                   <p className="text-sm md:text-base">{item.title}</p>
                   {item.subTitle && (
-                    <p className="text-silver-gray/60 text-sm">
-                      {item.subTitle}
-                    </p>
+                    <p className="text-sm text-zinc-400">{item.subTitle}</p>
                   )}
                 </div>
               </Link>
