@@ -15,7 +15,7 @@ export const metadata: Metadata = {
   },
   description:
     "Make AI your superpower with Linkt's AI based solutions. Elevate customer service using AI-powered chatbots, revolutionize insights and visual analytics with our computer vision systems, personalize user experiences through our recommendation systems, and create unique content with our advanced AI-powered content generation systems. Explore Linkt's innovative AI solutions for a transformative digital experience.",
-  metadataBase: new URL("https://linkt-nine.vercel.app"),
+  metadataBase: new URL("https://www.linkt.ai"),
   alternates: {
     canonical: "/",
   },
@@ -47,7 +47,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
+    <html lang="en" className="scroll-smooth">
       <body className="bg-body text-white font-primary scrollbar-style">
         <Navbar />
         {children}
