@@ -9,8 +9,7 @@ import Mission from "@/components/landing-page/Mission";
 export default function LandingPage() {
   return (
     <main className="min-h-[calc(100vh-80px)]">
-{/*       <ScrollAnimation>
-        <div> */}
+
           <Hero />
           <div className="absolute top-0 left-0 w-full h-full bg-dots -z-50" />
         </div>
@@ -24,7 +23,6 @@ export default function LandingPage() {
         <Philosophy />
 
         <CTA />
-      // </ScrollAnimation>
     </main>
   );
 }
