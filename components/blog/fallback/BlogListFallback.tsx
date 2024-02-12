@@ -2,37 +2,33 @@ const BlogListFallback = ({ limit }: { limit: number }) => {
   const fallbackAnimate = "bg-gray-800 animate-pulse";
   const blogCards = Array.from({ length: limit }, (_, index) => index + 1);
   return (
-    <section className="px-6 pt-32 md:px-8 md:pt-40">
-      <div className="max-w-7xl mx-auto gap-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
-        {blogCards.map((i) => (
-          <div
-            key={i}
-            className="max-w-7xl mx-auto flex flex-col rounded-xl p-6 gap-8 bg-secondary/50 animate-pulse w-full"
-          >
-            <div className={`${fallbackAnimate} w-full h-48 rounded-xl`} />
+    <div className="flex flex-col gap-6 w-full md:w-1/2">
+      {blogCards.map((i) => (
+        <div key={i} className="w-full">
+          <div className="flex gap-6">
+            <div
+              className={`rounded-xl shrink-0 h-32 w-36 md:w-full md:max-w-56 ${fallbackAnimate}`}
+            />
 
-            <div className="flex flex-col gap-8">
-              <div className="flex flex-col gap-4">
-                <div className={`${fallbackAnimate} w-2/3 h-4 rounded`} />
-                <div className={`${fallbackAnimate} w-1/2 h-4 rounded`} />
+            <div className="flex flex-col gap-2 w-full md:gap-4">
+              <div className="flex flex-col gap-2">
+                <div className={`w-full h-3 rounded ${fallbackAnimate}`} />
+                <div className={`w-1/2 h-3 rounded ${fallbackAnimate}`} />
               </div>
 
               <div className="flex gap-2 items-center">
-                <div className={`${fallbackAnimate} rounded-full h-6 w-6`} />
-                <div className={`${fallbackAnimate} w-1/4 h-3 rounded`} />
+                <div className={`rounded-full h-6 w-6 ${fallbackAnimate}`} />
+                <div className={`w-24 h-3 rounded ${fallbackAnimate}`} />
               </div>
 
-              <div className={`${fallbackAnimate} w-1/4 h-3 rounded`} />
+              <div className={`w-24 h-3 rounded ${fallbackAnimate}`} />
 
-              <div className="flex gap-2 items-center text-silver-gray">
-                <div className={`${fallbackAnimate} rounded-full h-6 w-6`} />
-                <div className={`${fallbackAnimate} w-1/4 h-3 rounded`} />
-              </div>
+              <div className={`w-12 h-3 rounded ${fallbackAnimate}`} />
             </div>
           </div>
-        ))}
-      </div>
-    </section>
+        </div>
+      ))}
+    </div>
   );
 };
 
