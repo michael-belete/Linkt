@@ -7,7 +7,7 @@
 }
 
 .btn-primary {
-  @apply flex justify-center items-center bg-blend-overlay bg-primary bg-gradient-to-b from-transparent to-black/30 shadow-primary-btn rounded-lg font-bold outline-primary outline-offset-2 outline-2 focus-visible:outline-2 focus-visible:outline focus-visible:outline-offset-2 duration-200 ease-linear hover:shadow-primary hover:shadow-[0px_0px_20px_2px] text-center text-sm lg:text-base;
+  @apply flex justify-center items-center text-white bg-blend-overlay bg-primary bg-gradient-to-b from-transparent to-black/30 shadow-primary-btn rounded-lg font-bold outline-primary outline-offset-2 outline-2 focus-visible:outline-2 focus-visible:outline focus-visible:outline-offset-2 duration-200 ease-linear hover:shadow-primary hover:shadow-[0px_0px_20px_2px] text-center text-sm lg:text-base;
 }
 
 .contact-input {
@@ -15,7 +15,7 @@
 }
 
 .scrollbar-style {
-  @apply scrollbar-thin scrollbar-track-rounded scrollbar-thumb-rounded scrollbar-thumb-primary/70;
+  @apply scrollbar scrollbar-thumb-primary/60 scrollbar-w-[6px] scrollbar-thumb-rounded hover:scrollbar-thumb-primary/80;
 }
 
 .shadow-card {
