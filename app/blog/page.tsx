@@ -45,13 +45,15 @@ const BlogPage = ({
   };
   return (
     <main className="min-h-[calc(100vh-80px)] pb-32">
-      <Suspense fallback={<MainBlogCardFallback />}>
-        <MainBlogContainer />
-      </Suspense>
+      <div className="flex flex-col justify-between gap-24 max-w-7xl mx-auto px-4 pt-12 md:pt-24 md:gap-12 md:flex-row md:px-6">
+        <Suspense fallback={<MainBlogCardFallback />}>
+          <MainBlogContainer />
+        </Suspense>
 
-      <Suspense fallback={<BlogListFallback limit={limit} />}>
-        <BlogListContainer pagination={pagination} />
-      </Suspense>
+        <Suspense fallback={<BlogListFallback limit={limit} />}>
+          <BlogListContainer pagination={pagination} />
+        </Suspense>
+      </div>
     </main>
   );
 };
@@ -67,7 +69,7 @@ const BlogListContainer = async ({
   const pageInfo = blogs.data.posts.pageInfo;
 
   return (
-    <div>
+    <div className="space-y-12 w-full md:w-1/2">
       <BlogList blogs={blogs.data.posts.nodes} />
       <Pagination pageInfo={pageInfo} />
     </div>
