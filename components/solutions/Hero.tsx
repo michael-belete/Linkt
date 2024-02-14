@@ -26,11 +26,12 @@ export default function Hero({ solution }: { solution: string }) {
           </div>
           <div className="flex justify-center">
             <Image
-              className="rounded-3xl object-cover w-full h-auto"
+              className="object-cover w-full h-auto"
               src={solutionsHeroData[solution].image.src}
               alt={solutionsHeroData[solution].image.alt}
               width={1200}
               height={675}
+              priority
             />
           </div>
         </div>
