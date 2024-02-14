@@ -6,9 +6,11 @@ import empower from "@/public/landing-page/empower.svg";
 import automateTask from "@/public/landing-page/automate-task.svg";
 import maximizePotential from "@/public/landing-page/maximize-potential.svg";
 import { SolutionsFeaturesData, SolutionsHeroData } from "@/types";
-import chatbotImg from "@/public/solutions/chatbot/chatbot.jpg";
-import computerVisionImg from "@/public/solutions/computer-vision/computer-vision.jpg";
+
+import chatbotImg from "@/public/solutions/chatbot/chatbot.png";
+import computerVisionImg from "@/public/solutions/computer-vision/computer-vision.png";
 import recommendationImg from "@/public/solutions/recommondation/recommendation.png";
+import contentGeneration from "@/public/solutions/content-generation/ai-content-generation.png";
 
 import availability from "@/public/solutions/chatbot/availability.svg";
 import multiChannel from "@/public/solutions/chatbot/multi-channel.svg";
@@ -25,7 +27,6 @@ import contentDiscovery from "@/public/solutions/recommondation/content-discover
 import textGeneration from "@/public/solutions/content-generation/text-generation.svg";
 import imageGeneration from "@/public/solutions/content-generation/image-generation.svg";
 import videoGeneration from "@/public/solutions/content-generation/video-generation.svg";
-import contentGeneration from "@/public/solutions/content-generation/ai-content-generation.png";
 
 import Image from "next/image";
 
@@ -47,7 +48,7 @@ const approachData = [
     },
 
     title: "Data Quality Above All Else",
-    body: "In steering the course of our product development, we rely on data-driven decision-making processes. AI models are only as good as the data used to train them. Just as a Michelin star restaurant has to start their day by ordering the best ingredients, we build each model using high quality data. This meticulous approach allows us to iterate with precision, enhancing user engagement and satisfaction continually.",
+    body: "In steering the course of our product development, Linkt prioritizes data-driven decision-making processes. AI models are only as good as the data used to train them. Just as a Michelin star restaurant has to start their day by ordering the best ingredients, we build each model using high quality data. This meticulous approach allows us to iterate with precision, enhancing user engagement and satisfaction continually.",
     leftAlign: true,
   },
   {
@@ -57,7 +58,7 @@ const approachData = [
     },
 
     title: "Ethical AI Development",
-    body: "Central to our mission is the responsible cultivation of Ethical AI. In an industry where data is as sensitive as it is powerful, we uphold the highest standards of data integrity and privacy. Our AI models are rigorously designed to eliminate biases and promote fairness, ensuring that the transformative potential of AI in education is realized ethically and equitably. It's not just about what AI can do; it's about ensuring it's done right.",
+    body: "Central to Linkt's mission is the responsible cultivation of Ethical AI. In an industry where data is as sensitive as it is powerful, we uphold the highest standards of data integrity and privacy. Our AI models are rigorously designed to eliminate biases and promote fairness, ensuring that the transformative potential of AI in education is realized ethically and equitably. It's not just about what AI can do; it's about ensuring it's done right.",
     leftAlign: false,
   },
 ];
@@ -204,7 +205,7 @@ const solutionsHeroData: SolutionsHeroData = {
 
   "computer-vision": {
     title:
-      "Revolutionize insights and visual analytics with our <span className='text-primary block'>Computer Vision Solutions</span>",
+      "Visual analytics with <span className='text-primary block'>Computer Vision Solutions</span>",
     description:
       "Empower your applications with advanced Computer Vision solutions, enabling you to analyze, and visualize valuable insights from visual data with remarkable ease.",
     image: {
@@ -215,7 +216,7 @@ const solutionsHeroData: SolutionsHeroData = {
 
   recommendation: {
     title:
-      "Personalize user experiences through our <span className='text-primary block'>Recommendation Systems</span>",
+      "Improve user experience with <span className='text-primary block'>Recommendation Systems</span>",
     description:
       "Unlock the power of tailored recommendations with  advanced Recommendation Engine. Elevate user experiences, boost engagement, and drive conversions by delivering personalized suggestions that resonate with each individual's preferences and behaviors.",
     image: {
@@ -226,12 +227,12 @@ const solutionsHeroData: SolutionsHeroData = {
 
   "content-generation": {
     title:
-      "Make your content unique with AI-powered <span className='text-primary block'>content generation</span>",
+      "Creative and unique <span className='text-primary block'>content generation</span>",
     description:
       "Revolutionize your content creation with advanced AI-driven solutions. From generating engaging written content to crafting captivating image and video content.",
     image: {
       src: contentGeneration,
-      alt: "AI chip processor on the center surrounded with fewer and smaller AI, text icons, video icons with a black background and bright red orange accent color ",
+      alt: "Content generation application demo",
     },
   },
 };
