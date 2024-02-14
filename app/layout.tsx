@@ -1,4 +1,5 @@
-import { GoogleAnalytics } from "@next/third-parties/google";
+// import { GoogleAnalytics } from "@next/third-parties/google";
+import Script from "next/script";
 import type { Metadata } from "next";
 import "./globals.css";
 import Navbar from "@/components/layout/Navbar";
@@ -48,12 +49,27 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className="scroll-smooth">
+      <head>
+        <Script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=G-FEX3LXTBY0"
+        />
+
+        <Script id="google-analytics">
+          {`
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', ${'${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}'});
+          `}
+        </Script>
+      </head>
       <body className="bg-body text-white font-primary scrollbar-style">
         <Navbar />
         {children}
         <Footer />
       </body>
-      <GoogleAnalytics gaId={process.env.GOOGLE_ANALYTICS || ""} />
+{/*       <GoogleAnalytics gaId={process.env.GOOGLE_ANALYTICS || ""} /> */}
     </html>
   );
 }
