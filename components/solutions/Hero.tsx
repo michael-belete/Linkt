@@ -29,8 +29,6 @@ export default function Hero({ solution }: { solution: string }) {
               className="object-cover w-full h-auto"
               src={solutionsHeroData[solution].image.src}
               alt={solutionsHeroData[solution].image.alt}
-              width={1200}
-              height={675}
               priority
             />
           </div>
